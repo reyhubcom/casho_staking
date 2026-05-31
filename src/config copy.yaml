@@ -1,6 +1,6 @@
 site:
-  name: CASHo.xyz
-  site: 'https://casho.xyz'
+  name: AstroWind
+  site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: CASHo.xyz
-    template: 'CASHo.xyz'
-  description: "A staking validator is a specialized node in a proof-of-stake (PoS) blockchain (like Ethereum or Solana) responsible for verifying transactions, securing the network, and adding new blocks. In exchange for locking up their cryptocurrency and maintaining continuous operation, validators earn yield (rewards)."
+    default: AstroWind
+    template: '%s — AstroWind'
+  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: CASHo.xyz
+    site_name: AstroWind
     images:
       - url: '~/assets/images/default.png'
         width: 1200
