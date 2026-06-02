@@ -115,7 +115,7 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/', target: '_blank' }],
+  actions: [{ text: 'EXCHANGE', href: '/exchange', target: '' }],
 };
 
 export const footerData = {
