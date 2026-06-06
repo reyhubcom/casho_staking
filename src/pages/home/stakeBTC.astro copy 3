@@ -1,0 +1,356 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+
+const appStoreImg = '~/assets/images/btc-store.png';
+const appStoreDownloadLink = '/homes/staking';
+
+
+
+const googlePlayImg = '~/assets/images/google-play.png';
+const googlePlayDownloadLink = '/home/BUY';
+
+const metadata = {
+  title: 'Mobile App Homepage',
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      position="left"
+      links={[
+        { text: 'Home', href: 'https://casho.xyz' },
+        { text: 'Bridge', href: '/bridge' },
+        { text: 'Wallet', href: '#' },
+      ]}
+      actions={[
+        {
+          text: 'EXCHANGE',
+          href: '/exchange',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline=""
+    image={{
+      src: 'https://imglink.cc/cdn/azEluH4nZQ.png',
+      alt: 'Crypto Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+     <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"> </span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "1D",
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showFloatingTooltip": false,
+  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "#DBDBDB",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Bitcoin",
+      "symbols": [
+        {
+          "s": "COINBASE:BTCUSD",
+          "d": "",
+          "base-currency-logoid": "crypto/XTVCBTC",
+          "currency-logoid": "country/US"
+        }
+      ],
+      "originalTitle": "Indices"
+    }
+  ],
+  "support_host": "https://www.tradingview.com",
+  "backgroundColor": "#0f0f0f",
+  "width": "100%",
+  "height": "130",
+  "showSymbolLogo": true,
+  "showChart": false
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+      <span class="text-accent dark:text-white">What is Bitcoin Staking?</span> <br />  <span
+        class="hidden xl:inline"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+       The main benefit of Bitcoin staking is that it increases Bitcoin's utility, allowing your Bitcoin assets to play an active role in securing various PoS ecosystems while generating extra rewards.
+      </span>
+    Since Bitcoin operates on a PoW mechanism rather than PoS, innovative mechanisms, similar to Ethereum's Eigenlayer restaking, enable Bitcoin to participate indirectly in the security of other chains. By staking your Bitcoin with Kiln, you can put your assets to work, receive rewards, and actively contribute to the growth and security of the Bitcoin ecosystem.
+    </Fragment>
+
+    <div slot="actions" class="flex max-w-sm gap-4">
+      <Button variant="link" href={appStoreDownloadLink}>
+        <Image src={appStoreImg} alt="App Store Image" width={200} format="webp" />
+      </Button>
+
+      
+
+      <Button variant="link" href={googlePlayDownloadLink}>
+        <Image src={googlePlayImg} alt="Google Play Image" width={200} format="webp" />
+      </Button>
+    </div>
+  </Hero2>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    id="features"
+    title="What is Staking?"
+    subtitle="‍
+
+Proof-of-Stake protocols  use staking to create consensus. By locking native tokens into a smart contract you earn the right to secure a chain and earn rewards on your stake. Due to its environmental efficiency, staking has overtaken mining and is used far more often in newer protocols."
+    tagline=""
+    columns={2}
+    items={[
+      {
+        title: 'Download and install the app',
+        description: `Begin your journey by downloading our user-friendly app from your device's app store or our official website.`,
+        icon: 'tabler:square-number-1',
+      },
+      {
+        title: 'Sign up',
+        description:
+          'Create your account by providing the necessary information, enabling you to access our full range of features.',
+        icon: 'tabler:square-number-2',
+      },
+      {
+        title: 'Browse templates',
+        description: 'Explore our diverse collection of website templates, categorized for easy navigation.',
+        icon: 'tabler:square-number-3',
+      },
+      {
+        title: 'Preview and select a template',
+        description: `Visualize the potential of each template through previews, then choose the one that aligns best with your project's needs.`,
+        icon: 'tabler:square-number-4',
+      },
+    ]}
+    image={{
+      src: 'https://imglink.cc/cdn/-2mNsL2bPK.png',
+      alt: 'Colorful Image',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'User-friendly interface',
+        description:
+          'An intuitive and easy-to-navigate interface that allows users to quickly browse and find the templates they need.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Personalization options',
+        description:
+          'Include basic customization tools that let users modify text, colors, images, and other elements within the templates.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Ready-to-use components',
+        description:
+          'Enhance your designs with ready-to-use elements like graphics, icons, and layouts, saving you time and boosting visual appeal.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Preview Mode',
+        description: 'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
+        icon: 'tabler:carousel-horizontal',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Offline Access',
+        description: 'Offer the option for users to download purchased templates for offline use.',
+        icon: 'tabler:wifi-off',
+      },
+      {
+        title: 'Secure Cloud Storage',
+        description:
+          'Provide cloud storage for purchased templates, ensuring users can access and back up their templates from anywhere securely.',
+        icon: 'tabler:file-download',
+      },
+      {
+        title: 'Regular Updates',
+        description: 'Continuously add new templates and features to keep the app fresh and engaging for users.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Wishlist',
+        description: `Allow users to create a wishlist of templates they're interested in, making it easier for them to revisit and potentially purchase later.`,
+        icon: 'tabler:heart',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Vintage Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Other features</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Statistics of our app"
+    stats={[
+      { amount: '20K', icon: 'tabler:download' },
+      { amount: '18.5K', icon: 'tabler:users' },
+      { amount: '4.7', icon: 'tabler:user-star' },
+    ]}
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Solana Staking"
+    testimonials={[
+      {
+        testimonial: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+        name: 'Cary Kennedy',
+        job: 'Film director',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        testimonial: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+        name: 'Josh Wilkinson',
+        job: 'Product Manager',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial:
+          'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+        name: 'Sidney Hansen',
+        job: 'Decorator',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '',
+      text: 'More Staking',
+      href: '/homes/staking',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Still have some doubts?"
+    items={[
+      {
+        title: 'What does this app do?',
+        description:
+          'This app provides a platform for you to easily browse, purchase, download, and use a wide range of website templates for your projects.',
+      },
+      {
+        title: 'How can this app solve my problem?',
+        description:
+          'This app streamlines the process of finding and implementing professional website designs, saving you time and effort in creating visually appealing and functional websites.',
+      },
+      {
+        title: 'Is it available for my device?',
+        description: `Our app is designed for compatibility across various devices and platforms, ensuring accessibility whether you're using a smartphone, tablet, or computer.`,
+      },
+      {
+        title: 'What makes this app different from others?',
+        description:
+          'Our app stands out for its user-friendly interface, extensive template collection, and seamless integration of the purchasing and downloading process, making it highly efficient.',
+      },
+      {
+        title: 'Are there any costs involved?',
+        description:
+          'While the app itself may be free to download, there may be costs associated with purchasing specific templates based on your preferences and project requirements.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    id="download"
+    title="Download our app now!"
+    subtitle="Access a variety of stunning templates, simplify your creative process, and elevate your online presence."
+  >
+    <div slot="actions" class="flex max-w-sm gap-4">
+      <Button variant="link" href={appStoreDownloadLink}>
+        <Image src={appStoreImg} alt="App Store Image" width={200} format="webp" />
+      </Button>
+
+      <Button variant="link" href={googlePlayDownloadLink}>
+        <Image src={googlePlayImg} alt="Google Play Image" width={200} format="webp" />
+      </Button>
+    </div>
+  </CallToAction>
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
+</Layout>
