@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'Staking Bitcoin',
-          href: getPermalink('/stake/BTC'),
+          href: getPermalink('/home/stakeBTC'),
         },
         {
           text: 'Stake [ ETH ]',
