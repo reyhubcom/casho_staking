@@ -138,8 +138,8 @@ export const footerData = {
         { text: 'Ethereum', href: '#' },
         { text: 'Solana', href: '#' },
         { text: 'Binance', href: '#' },
-        { text: 'Monad', href: '#' },
-        { text: 'All Networks', href: '#' },
+        { text: 'Monad', href: 'home/stakeMON' },
+        { text: 'All Networks', href: '/home/staking' },
       ],
     },
     {
