@@ -133,13 +133,13 @@ export const footerData = {
       ],
     },
     {
-      title: 'Platform',
+      title: 'Networks',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Ethereum', href: '#' },
+        { text: 'Solana', href: '#' },
+        { text: 'Binance', href: '#' },
+        { text: 'Monad', href: '#' },
+        { text: 'All Networks', href: '#' },
       ],
     },
     {
