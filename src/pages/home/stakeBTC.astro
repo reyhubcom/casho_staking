@@ -33,29 +33,14 @@ const metadata = {
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
     <Header
-      export const headerData = {
-  links: [
-    {
-      text: 'Staking',
-      links: [
+      position="left"
+      links={[
+        { text: 'Home', href: 'https://casho.xyz' },
+        { text: 'Bridge', href: '/bridge' },
+        { text: 'Wallet', href: '/home/BUY' },
+      ]}
+      actions={[
         {
-          text: 'Staking Bitcoin',
-          href: getPermalink('/home/stakeBTC'),
-        },
-        {
-          text: 'Stake [ ETH ]',
-          href: getPermalink('/home/stakeETH'),
-        },
-        {
-          text: 'Stake [ SOL ]',
-          href: getPermalink('/home/stakeSOL'),
-        },
-        {
-          text: 'Stake [ MON ]',
-          href: getPermalink('/home/stakeMON'),
-        },
-      ],
-    },
           text: 'EXCHANGE',
           href: '/exchange',
         },
