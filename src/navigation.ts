@@ -24,7 +24,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: 'Products',
       links: [
         {
           text: 'Features (Anchor Link)',
