@@ -135,10 +135,10 @@ export const footerData = {
     {
       title: 'Networks',
       links: [
-        { text: 'Ethereum', href: 'home/stakeETH' },
-        { text: 'Solana', href: 'home/stakeSOL' },
-        { text: 'Binance', href: 'home/stakeBNB' },
-        { text: 'Monad', href: 'home/stakeMON' },
+        { text: 'Ethereum', href: '/home/stakeETH' },
+        { text: 'Solana', href: '/home/stakeSOL' },
+        { text: 'Binance', href: '/home/stakeBNB' },
+        { text: 'Monad', href: '/home/stakeMON' },
         { text: 'All Networks', href: '/home/staking' },
       ],
     },
