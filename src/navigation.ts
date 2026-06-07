@@ -11,7 +11,7 @@ export const headerData = {
         },
         {
           text: 'Stake [ ETH ]',
-          href: getPermalink('/homes/startup'),
+          href: getPermalink('/home/stakeETH'),
         },
         {
           text: 'Stake [ SOL ]',
