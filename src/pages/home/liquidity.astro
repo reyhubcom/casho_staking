@@ -1,0 +1,103 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'CASHo.xyz | Trusted Blockchains Validator',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+     
+    ]}
+  
+  >
+     <Fragment slot="title">
+
+      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/8f406cee-b6c1-4247-a1d0-81984b9bd8cc/cBvZfZXi8w.lottie" speed="1" style="width: 100%; height: 100px" mode="forward" loop autoplay></dotlottie-wc>
+
+      Tangem<span class="hidden xl:inline"></span>
+      <span class="text-accent dark:text-white"> Wallet</span> 
+    </Fragment>
+     <Fragment slot="subtitle">
+     <span class="hidden sm:inline"></span>
+      <span class="text-accent dark:text-white"> Your Secure Crypto Hardware Wallet</span> 
+   
+      </Fragment>
+
+    <Fragment slot="subtitle">
+       <CallToAction
+    actions={[
+      {
+        text: 'primary',
+        text: 'BUY.Tangem',
+        href: 'https://tangem.com/en/pricing/?promocode=EW8JGT&utm_source=tangem-rp&utm_medium=affiliate&utm_campaign=EW8JGT',
+        target: '_blank',
+        icon: 'tabler:shopping-bag',
+      },
+      {
+        text: 'primary',
+        text: '$10.Off',
+        href: 'https://tangem.com/en/pricing/?promocode=EW8JGT&utm_source=tangem-rp&utm_medium=affiliate&utm_campaign=EW8JGT',
+        target: '_blank',
+        icon: 'tabler:rosette-discount',
+      },
+      {
+        text: 'primary',
+        text: 'Bridge',
+        href: '/home/bridge',
+        target: '',
+        icon: 'tabler:building-bridge',
+      },
+      {
+        text: 'primary',
+        text: 'Staking',
+        href: '/home/staking',
+        target: '',
+        icon: 'tabler:external-link',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/5a47b9dc-0109-468f-b25c-e555869fbce0/JVBCQwCMLx.lottie" speed="0.5" style="width: 100%; height: 500px" mode="forward" loop autoplay></dotlottie-wc>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Your secure crypto hardware wallet Tangem keeps your rypto safe and offline. Store, buy, earn, send, swap, and spend thousands of tokens.
+    </Fragment>
+  </CallToAction>
+  
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        </span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"></span>
+      Enterprise-grade validator.infrastructure for Proof-of-Stake networks. Stake your assets with confidence and earn consistent rewards.
+    </Fragment>
+  </Hero>
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
+</Layout>
