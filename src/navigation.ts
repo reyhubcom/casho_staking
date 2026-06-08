@@ -121,9 +121,9 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Products',
       links: [
-        { text: 'Features', href: '#' },
+        { text: 'Liquidity Pool', href: '/home/liquidity' },
         { text: 'Security', href: '#' },
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
