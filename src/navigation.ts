@@ -123,7 +123,7 @@ export const footerData = {
     {
       title: 'Products',
       links: [
-        { text: 'Security', href: '#' },
+        { text: 'Liquidity Pool', href: '/home/liquidity' },
         { text: 'Security', href: '#' },
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
