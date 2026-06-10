@@ -31,7 +31,7 @@ export const headerData = {
           href: getPermalink('/home/liquidity'),
         },
         {
-          text: 'Services',
+          text: 'Yields',
           href: getPermalink('/services'),
         },
         {
@@ -124,7 +124,7 @@ export const footerData = {
       title: 'Products',
       links: [
         { text: 'Liquidity Pool', href: '/home/liquidity' },
-        { text: 'Security', href: '#' },
+        { text: 'Yields', href: '#' },
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
         { text: 'Customer stories', href: '#' },
