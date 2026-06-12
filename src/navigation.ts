@@ -35,7 +35,7 @@ export const headerData = {
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Farming',
           href: getPermalink('/pricing'),
         },
         {
@@ -125,7 +125,7 @@ export const footerData = {
       links: [
         { text: 'Liquidity Pool', href: '/home/liquidity' },
         { text: 'Yields', href: '#' },
-        { text: 'Team', href: '#' },
+        { text: 'Farming', href: '#' },
         { text: 'Enterprise', href: '#' },
         { text: 'Customer stories', href: '#' },
         { text: 'Pricing', href: '#' },
