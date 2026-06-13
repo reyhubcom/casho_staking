@@ -68,21 +68,18 @@ export const headerData = {
           href: getPermalink('/lending/SOL'),
         },
         {
-          text: 'Click-Through',
+          text: 'Lend [ BNB ]',
           href: getPermalink('/landing/click-through'),
         },
         {
-          text: 'Product Details (or Services)',
+          text: 'Lend [ MON ]',
           href: getPermalink('/landing/product'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
+          text: 'ALL Lending',
           href: getPermalink('/landing/pre-launch'),
         },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
+        
       ],
     },
     {
