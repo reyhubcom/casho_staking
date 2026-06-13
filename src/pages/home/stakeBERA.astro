@@ -14,8 +14,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 
-const appStoreImg = '~/assets/images/bera-store.png';
-const appStoreDownloadLink = '/home/BERA';
+const appStoreImg = '~/assets/images/btc-store.png';
+const appStoreDownloadLink = '/stake/BTC';
 
 const exchangeStoreImg = '~/assets/images/exchange-store.png';
 const exchangeStoreDownloadLink = '/home/exchange';
@@ -83,15 +83,13 @@ const metadata = {
   "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
   "tabs": [
     {
-      "title": "BeraChain",
+      "title": "Bitcoin",
       "symbols": [
         {
-          "s": "COINBASE:BERAUSDC",
+          "s": "COINBASE:BTCUSD",
           "d": "",
-          "logo": {
-            "style": "single",
-            "logoid": "crypto/XTVCBERA"
-          }
+          "base-currency-logoid": "crypto/XTVCBTC",
+          "currency-logoid": "country/US"
         }
       ],
       "originalTitle": "Indices"
@@ -107,7 +105,7 @@ const metadata = {
   </script>
 </div>
 <!-- TradingView Widget END -->
-      <span class="text-accent dark:text-white">What is BeraChain Staking?</span> <br />  <span
+      <span class="text-accent dark:text-white">What is Bitcoin Staking?</span> <br />  <span
         class="hidden xl:inline"></span
       >
     </Fragment>
