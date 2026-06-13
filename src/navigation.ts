@@ -64,8 +64,8 @@ export const headerData = {
           href: getPermalink('/lending/ETH'),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
+          text: 'Lend [ SOL ]',
+          href: getPermalink('/lending/SOL'),
         },
         {
           text: 'Click-Through',
