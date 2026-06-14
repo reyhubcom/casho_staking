@@ -1,0 +1,49 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'CASHo.xyz | Trusted Blockchain Validator',
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline=""
+    title="What Is Crypto Lending?"
+    subtitle="Cryptocurrency lending refers to the process of temporarily transferring ownership of a crypto asset to a borrower in exchange for interest payments. Cryptocurrency lending is most commonly performed through crypto lending platforms — centralized or decentralized intermediaries that connect borrowers and lenders."
+    actions={[
+      { variant: 'primary', text: 'Lend.ETH', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Learn more', href: '#' },
+    ]}
+    image={{
+      src: 'https://strapi-public-bucket.s3.amazonaws.com/Tab_Trader_Academy_What_is_a_Crypto_Lending_f12999a2ee.png',
+      alt: 'Magnet attracting screws. Lead generation landing page demo',
+    }}
+  />
+
+  <CallToAction
+    title="Coming soon"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/arthelokyo/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  />
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
+</Layout>
