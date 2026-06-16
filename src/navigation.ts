@@ -43,17 +43,10 @@ export const headerData = {
           href: getPermalink('/about'),
         },
         {
-          text: 'Contact',
+          text: 'Deposit',
           href: getPermalink('/contact'),
         },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+       
       ],
     },
     {
