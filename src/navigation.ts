@@ -117,9 +117,9 @@ export const footerData = {
         { text: 'Yields', href: '#' },
         { text: 'Farming', href: '#' },
         { text: 'Lending', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Deposit', href: '#' },
+        { text: 'Locked', href: '#' },
+        { text: 'Leverage Farming', href: '#' },
       ],
     },
     {
