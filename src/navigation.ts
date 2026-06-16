@@ -54,7 +54,7 @@ export const headerData = {
       links: [
         {
           text: 'Lend [ ETH ]',
-          href: getPermalink('/lending/ETH'),
+          href: getPermalink('/home/lendETH'),
         },
         {
           text: 'Lend [ SOL ]',
