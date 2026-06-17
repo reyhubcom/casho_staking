@@ -58,7 +58,7 @@ export const headerData = {
         },
         {
           text: 'Lend [ SOL ]',
-          href: getPermalink('/lending/SOL'),
+          href: getPermalink('/home/lendSOL'),
         },
         {
           text: 'Lend [ BNB ]',
