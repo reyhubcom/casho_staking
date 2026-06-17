@@ -14,8 +14,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 
-const appStoreImg = '~/assets/images/eth-store.png';
-const appStoreDownloadLink = '/stake/ETH';
+const appStoreImg = '~/assets/images/sol-store.png';
+const appStoreDownloadLink = '/stake/SOL';
 
 const exchangeStoreImg = '~/assets/images/exchange-store.png';
 const exchangeStoreDownloadLink = '/home/exchange';
@@ -37,7 +37,7 @@ const metadata = {
       links={[
         { text: 'Home', href: 'https://casho.xyz' },
         { text: 'Bridge', href: '/bridge' },
-        { text: 'stake [ SOL ]', href: '/home/stakeSOL' },
+        { text: 'Wallet', href: '/home/BUY' },
       ]}
       actions={[
         {
@@ -55,7 +55,7 @@ const metadata = {
   <Hero2
     tagline=""
     image={{
-      src: 'https://i.postimg.cc/7Zzv0MpD/eth.png',
+      src: 'https://i.postimg.cc/TwsjGmCK/solana.png',
       alt: 'Crypto Hero Image',
     }}
   >
@@ -86,9 +86,9 @@ const metadata = {
       "title": "Ethereum",
       "symbols": [
         {
-          "s": "COINBASE:ETHUSD",
+          "s": "COINBASE:SOLUSD",
           "d": "",
-          "base-currency-logoid": "crypto/XTVCETH",
+          "base-currency-logoid": "crypto/XTVCSOL",
           "currency-logoid": "country/US"
         }
       ],
@@ -105,16 +105,16 @@ const metadata = {
   </script>
 </div>
 <!-- TradingView Widget END -->
-      <span class="text-accent dark:text-white">What is Ethereum Staking?</span> <br />  <span
+      <span class="text-accent dark:text-white">What is Solana Staking?</span> <br />  <span
         class="hidden xl:inline"></span
       >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-       Ethereum staking is the process of locking up your ETH to help secure the network and validate transactions. In return for acting as a validator and putting your assets up as collateral, you earn periodic rewards paid in ETH, typically yielding around 2.5% to 3.5% annually.
+       Solana staking is the process of locking up SOL tokens to secure the network and earn passive financial rewards. The Solana blockchain uses a Proof-of-Stake (PoS) consensus mechanism. Token holders delegate their voting power to network validators. Validators verify transactions and add new blocks to the blockchain.
       </span>
-    Ethereum operates on a "Proof-of-Stake" consensus mechanism. Instead of relying on heavy computational power to mine blocks, the network selects validators based on the amount of ETH they have locked up.
+    Native Staking: You delegate SOL directly to a validator through a non-custodial wallet like Phantom. You maintain complete ownership of your private keys. Your funds are locked and require a 2 to 3 day cooldown period to unstake.
     </Fragment>
 
     <div slot="actions" class="flex max-w-lg gap-4">
