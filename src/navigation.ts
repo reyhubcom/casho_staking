@@ -62,15 +62,15 @@ export const headerData = {
         },
         {
           text: 'Lend [ BNB ]',
-          href: getPermalink('/landing/click-through'),
+          href: getPermalink('/home/lendBNB'),
         },
         {
           text: 'Lend [ MON ]',
-          href: getPermalink('/landing/product'),
+          href: getPermalink('/home/lendMON'),
         },
         {
           text: 'ALL Lending',
-          href: getPermalink('/landing/pre-launch'),
+          href: getPermalink('/home/alllend'),
         },
         
       ],

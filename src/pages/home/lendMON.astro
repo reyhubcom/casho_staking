@@ -14,8 +14,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 
-const appStoreImg = '~/assets/images/eth-store.png';
-const appStoreDownloadLink = '/stake/ETH';
+const appStoreImg = '~/assets/images/mon-store.png';
+const appStoreDownloadLink = '/stake/MON';
 
 const exchangeStoreImg = '~/assets/images/exchange-store.png';
 const exchangeStoreDownloadLink = '/home/exchange';
@@ -37,7 +37,7 @@ const metadata = {
       links={[
         { text: 'Home', href: 'https://casho.xyz' },
         { text: 'Bridge', href: '/bridge' },
-        { text: 'stake [ SOL ]', href: '/home/stakeSOL' },
+        { text: 'Wallet', href: '/home/BUY' },
       ]}
       actions={[
         {
@@ -55,7 +55,7 @@ const metadata = {
   <Hero2
     tagline=""
     image={{
-      src: 'https://i.postimg.cc/7Zzv0MpD/eth.png',
+      src: 'https://i.postimg.cc/Z5KrB40x/mon.png',
       alt: 'Crypto Hero Image',
     }}
   >
@@ -86,9 +86,9 @@ const metadata = {
       "title": "Ethereum",
       "symbols": [
         {
-          "s": "COINBASE:ETHUSD",
+          "s": "COINBASE:MONUSD",
           "d": "",
-          "base-currency-logoid": "crypto/XTVCETH",
+          "base-currency-logoid": "crypto/XTVCMONAD",
           "currency-logoid": "country/US"
         }
       ],
@@ -105,16 +105,16 @@ const metadata = {
   </script>
 </div>
 <!-- TradingView Widget END -->
-      <span class="text-accent dark:text-white">What is Ethereum Staking?</span> <br />  <span
+      <span class="text-accent dark:text-white">What is Monad Staking?</span> <br />  <span
         class="hidden xl:inline"></span
       >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-       Ethereum staking is the process of locking up your ETH to help secure the network and validate transactions. In return for acting as a validator and putting your assets up as collateral, you earn periodic rewards paid in ETH, typically yielding around 2.5% to 3.5% annually.
+       Monad staking is the process of locking your native MON tokens to support the security and consensus mechanism of the high-performance Layer-1 blockchain Monad. By doing so, you earn passive yield (typically ranging between 12% and 15% annualized) without having to run your own validator.
       </span>
-    Ethereum operates on a "Proof-of-Stake" consensus mechanism. Instead of relying on heavy computational power to mine blocks, the network selects validators based on the amount of ETH they have locked up.
+    Delegation: You do not need to run expensive server hardware. Instead, you "delegate" your MON tokens to a trusted validator.
     </Fragment>
 
     <div slot="actions" class="flex max-w-lg gap-4">
