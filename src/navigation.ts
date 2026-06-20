@@ -70,7 +70,7 @@ export const headerData = {
         },
         {
           text: 'ALL Lending',
-          href: getPermalink('/home/alllend'),
+          href: getPermalink('/home/lending'),
         },
         
       ],

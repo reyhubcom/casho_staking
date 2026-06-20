@@ -1,0 +1,104 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'CASHo.xyz | Trusted Blockchains Validator',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+     
+    ]}
+  
+  >
+     <Fragment slot="title">
+
+      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/8f406cee-b6c1-4247-a1d0-81984b9bd8cc/cBvZfZXi8w.lottie" speed="1" style="width: 100%; height: 100px" mode="forward" loop autoplay></dotlottie-wc>
+
+      CASHo <span class="hidden xl:inline"></span>
+      <span class="text-accent dark:text-white"> Staking</span> 
+    </Fragment>
+     <Fragment slot="subtitle">
+     <span class="hidden sm:inline"></span>
+      <span class="text-accent dark:text-white"> Validator Infrastructure, Staking Operations, Market Intelligence, Production Workflows.</span> 
+   
+      </Fragment>
+
+    <Fragment slot="subtitle">
+       <CallToAction
+    actions={[
+      {
+        text: 'primary',
+        text: 'Stake.NOW',
+        href: '/home/staking',
+        target: '',
+        icon: 'tabler:steam',
+      },
+      {
+        text: 'primary',
+        text: 'Exchange',
+        href: '/home/exchange',
+        target: '',
+        icon: 'tabler:exchange',
+      },
+      {
+        text: 'primary',
+        text: 'Bridge',
+        href: '/bridge',
+        target: '',
+        icon: 'tabler:building-bridge',
+      },
+      {
+        text: 'primary',
+        text: 'Wallets',
+        href: '/home/BUY',
+        target: '',
+        icon: 'tabler:wallet',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#0693e3" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/0ff0b07a-0a93-44aa-9c4f-c534b29c82fe/MHtxEEECle.lottie" speed="1" style="width: 100%; height: 400px" mode="forward" loop autoplay></dotlottie-wc>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Delegate Your Stake: If you do not have the technical knowledge or the minimum token requirements, you can delegate your tokens to an existing validator or a staking pool (e.g., Lido, Rocket Pool). 
+    </Fragment>
+  </CallToAction>
+  
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        </span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"></span>
+      A staking validator is a node operator on a Proof-of-Stake (PoS) blockchain responsible for verifying transactions, proposing new blocks, and maintaining network security. By locking up ("staking") their own cryptocurrency as collateral, validators ensure the blockchain's integrity and earn yield in return.
+    </Fragment>
+  </Hero>
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
+</Layout>
