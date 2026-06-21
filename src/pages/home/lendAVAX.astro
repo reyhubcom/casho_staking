@@ -63,7 +63,7 @@ const metadata = {
      <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"> </span></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text">World markets</span></a><span class="trademark"> by TradingView</span></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
   "colorTheme": "dark",
@@ -83,13 +83,15 @@ const metadata = {
   "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
   "tabs": [
     {
-      "title": "Ethereum",
+      "title": "Avalanche",
       "symbols": [
         {
-          "s": "COINBASE:MONUSD",
+          "s": "COINBASE:AVAXUSD",
           "d": "",
-          "base-currency-logoid": "crypto/XTVCMONAD",
-          "currency-logoid": "country/US"
+          "logo": {
+            "style": "single",
+            "logoid": "crypto/XTVCAVAX"
+          }
         }
       ],
       "originalTitle": "Indices"
