@@ -32,7 +32,7 @@ export const headerData = {
       links: [
         {
           text: 'Liquidity Pool',
-          href: getPermalink('/home/liquidity'),
+          href: getPermalink('/liquidity/pool'),
         },
         {
           text: 'Yields',
