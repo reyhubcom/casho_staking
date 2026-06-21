@@ -1,0 +1,229 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+
+const appStoreImg = '~/assets/images/lendbnb-store.png';
+const appStoreDownloadLink = '/stake/BNB';
+
+const exchangeStoreImg = '~/assets/images/exchange-store.png';
+const exchangeStoreDownloadLink = '/home/exchange';
+
+const googlePlayImg = '~/assets/images/google-play.png';
+const googlePlayDownloadLink = '/home/BUY';
+
+const metadata = {
+  title: 'CASHo.xyz | Trusted Blockchain Validator',
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      position="left"
+      links={[
+        { text: 'Home', href: 'https://casho.xyz' },
+        { text: 'Bridge', href: '/bridge' },
+        { text: 'Lend [ MON ]', href: '/home/lendMON' },
+      ]}
+      actions={[
+        {
+          text: 'EXCHANGE',
+          href: '/exchange',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline=""
+    image={{
+      src: 'https://imglink.cc/cdn/QKWbRJWKMo.png',
+      alt: 'Crypto Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+     <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"> </span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "1D",
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showFloatingTooltip": false,
+  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "#DBDBDB",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Binance",
+      "symbols": [
+        {
+          "s": "COINBASE:BNBUSD",
+          "d": "",
+          "base-currency-logoid": "crypto/XTVCBNB",
+          "currency-logoid": "country/US"
+        }
+      ],
+      "originalTitle": "Indices"
+    }
+  ],
+  "support_host": "https://www.tradingview.com",
+  "backgroundColor": "#0f0f0f",
+  "width": "100%",
+  "height": "130",
+  "showSymbolLogo": true,
+  "showChart": false
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+      <span class="text-accent dark:text-white">What is Binance Lending?</span> <br />  <span
+        class="hidden xl:inline"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">Binance Crypto Lending operates primarily through two different mechanisms depending on your financial goal: Binance Earn, which allows you to lend your assets to the platform to earn passive interest, and Binance Loans, which allows you to borrow crypto by providing your own digital assets as overcollateralized security.
+      </span>
+    If you own crypto and want to generate passive income, you effectively lend your assets to Binance's liquidity and margin pools.
+
+    </Fragment>
+
+    <div slot="actions" class="flex max-w-lg gap-4">
+      <Button variant="link" href={appStoreDownloadLink}>
+        <Image src={appStoreImg} alt="App Store Image" width={340} format="webp" />
+      </Button>
+
+      <Button variant="link" href={exchangeStoreDownloadLink}>
+        <Image src={exchangeStoreImg} alt="Exchange Store Image" width={340} format="webp" />
+      </Button>
+
+      <Button variant="link" href={googlePlayDownloadLink}>
+        <Image src={googlePlayImg} alt="Google Play Image" width={340} format="webp" />
+      </Button>
+    </div>
+  </Hero2>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    id="features"
+    title="What is Crypto Lending?"
+    subtitle="‍
+
+Crypto lending is a decentralized finance (DeFi) or centralized finance (CeFi) practice where investors deposit cryptocurrency to earn interest, while borrowers pledge crypto assets as collateral to secure a loan."
+    tagline=""
+    
+   
+  />
+
+   <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Multiple Networks"
+    testimonials={[
+      {
+        testimonial: `Receive rewards on your Bitcoin holdings without selling, bridging or swapping to wBTC.`,
+        name: 'Bitcoin',
+        job: 'Diversify and Earn',
+        image: {
+          src: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        testimonial: `Bring new opportunities by enabling your users to earn staking rewards.`,
+        name: 'Ethereum',
+        job: 'Diversify and Earn',
+        image: {
+          src: 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial: `Anyone can delegate some SOL tokens to a validator (or “vote account”) that participates to the consensus of the Solana chain.`,
+        name: 'Solana',
+        job: 'Diversify and Earn',
+        image: {
+          src: 'https://cryptologos.cc/logos/solana-sol-logo.png',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial: `By locking a protocol’s native tokens to give “validators” the right to secure a chain. Validators propose new blocks or attest other validators’ blocks, gaining rewards for doing so.`,
+        name: 'Monad',
+        job: 'Diversify and Earn',
+        image: {
+          src: 'https://www.monad.xyz/favicon.ico',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial: `Binance Staking is integrated into the Binance Earn ecosystem, offering users multiple ways to secure blockchain networks and earn passive rewards directly from their exchange accounts.`,
+        name: 'Binance',
+        job: 'Diversify and Earn',
+        image: {
+          src: 'https://cryptologos.cc/logos/binance-usd-busd-logo.png',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial:
+          'Avalanche is a blockchain platform that aims to address the blockchain trilemma of scalability, security and decentralization thanks to its unique Proof of Stake (PoS) mechanism.',
+        name: 'Avalanche',
+        job: 'Diversify and Earn',
+        image: {
+          src: 'https://cryptologos.cc/logos/avalanche-avax-logo.png',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '',
+      text: 'More Networks',
+      href: '/stake/BNB',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  
+
+  <!-- CallToAction Widget *********** -->
+
+ 
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
+</Layout>
