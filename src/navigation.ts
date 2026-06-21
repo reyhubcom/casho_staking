@@ -18,8 +18,12 @@ export const headerData = {
           href: getPermalink('/home/stakeSOL'),
         },
         {
-          text: 'Stake [ MON ]',
+          text: 'All Networks',
           href: getPermalink('/home/stakeMON'),
+        },
+        {
+          text: 'Stake [ MON ]',
+          href: getPermalink('/home/staking'),
         },
       ],
     },
