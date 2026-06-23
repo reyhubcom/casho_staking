@@ -36,7 +36,7 @@ export const headerData = {
         },
         {
           text: 'Yields',
-          href: getPermalink('/services'),
+          href: getPermalink('/yield/earn'),
         },
         {
           text: 'Farming',
