@@ -1,0 +1,108 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'CASHo.xyz | Trusted Blockchains Validator',
+};
+---
+
+<Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+     
+    ]}
+  
+  >
+     <Fragment slot="title">
+
+      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/8f406cee-b6c1-4247-a1d0-81984b9bd8cc/cBvZfZXi8w.lottie" speed="1" style="width: 100%; height: 100px" mode="forward" loop autoplay></dotlottie-wc>
+
+      Multiple <span class="hidden xl:inline"></span>
+      <span class="text-accent dark:text-white"> Networks</span> 
+    </Fragment>
+     <Fragment slot="subtitle">
+     <span class="hidden sm:inline"></span>
+      <span class="text-accent dark:text-white"> Leading Multi-Network Staking Providers.</span> 
+   
+      </Fragment>
+
+    <Fragment slot="subtitle">
+       <CallToAction
+    actions={[
+      {
+        text: '',
+        text: 'Binance',
+        image: {
+          src: '/home/stakeBNB',
+          alt: 'Mark Thompson Image',
+          
+        },
+      
+        href: '/home/stakeBNB',
+        target: '',
+        icon: 'tabler:link',
+      },
+      {
+        text: 'primary',
+        text: 'Polygon',
+        href: '/home/stakePOL',
+        target: '',
+        icon: 'tabler:link',
+      },
+      {
+        text: 'primary',
+        text: 'Avalanche',
+        href: '/home/stakeAVAX',
+        target: '',
+        icon: 'tabler:link',
+      },
+      {
+        text: 'primary',
+        text: 'Staking',
+        href: '/home/staking.1',
+        target: '',
+        icon: 'tabler:external-link',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/4a35d1ad-b762-43a9-8eb9-4e40e8730838/PYJ33n4FZT.lottie" speed="0.25" style="width: 100%; height: 430px" mode="forward" loop autoplay></dotlottie-wc>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Multi-network staking providers allow investors to securely lock up digital assets across dozens of independent Proof-of-Stake (PoS) blockchains from a single, unified interface. Choosing a specialized provider that supports multiple networks eliminates the operational complexity of managing different validator configurations, wallets, and reward structures separately.
+    </Fragment>
+  </CallToAction>
+  
+      <span class="hidden sm:inline">
+        <span class="font-semibold"></span> 
+        </span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"></span>
+      When choosing your multi-network staking partner, you should balance yields against critical structural risks. Non-custodial platforms are widely preferred over centralized custodians because you maintain full ownership of your private keys. Always verify a provider's built-in slashing protection features. If a validator acts dishonestly or experiences extended downtime, network penalties could cause you to lose a portion of your staked principal
+    </Fragment>
+  </Hero>
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
+</Layout>
