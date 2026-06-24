@@ -118,7 +118,7 @@ export const footerData = {
       title: 'Products',
       links: [
         { text: 'Liquidity Pool', href: '/liquidity/pool' },
-        { text: 'Yields', href: '#' },
+        { text: 'Yields', href: '/yield/earn' },
         { text: 'Farming', href: '#' },
         { text: 'Lending', href: '#' },
         { text: 'Deposit', href: '#' },
