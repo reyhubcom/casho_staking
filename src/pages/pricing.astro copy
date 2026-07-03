@@ -13,12 +13,13 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6a1d75f325e4255ba09ba2f7&product=sop' async='async'></script>
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline=""
+    title="DeFi Yields Farming"
+    subtitle="Best DeFi Yield Farming - Highest Crypto Platform APYs"
   />
 
   <!-- Pricing Widget ******************* -->
@@ -28,62 +29,7 @@ const metadata = {
     subtitle="Only pay for what you need"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
-        items: [
-          {
-            description: 'Etiam in libero, et volutpat',
-          },
-          {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-      },
-      {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Proin vel laoreet',
-          },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'premium',
+        title: 'FARMING',
         subtitle: 'Optimal choice for companies',
         price: 199,
         period: 'Per Month',
@@ -102,9 +48,59 @@ const metadata = {
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '',
+          text: 'Farming NOW',
+          href: '/home/stakeMON',
+        },
+      },
+      {
+        title: 'FARMING',
+        subtitle: 'Optimal choice for companies',
+        price: 150,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Curabitur suscipit risus',
+          },
+          {
+            description: 'Aliquam habitasse malesuada',
+          },
+          {
+            description: 'Suspendisse sit amet blandit',
+          },
+          {
+            description: 'Suspendisse auctor blandit dui',
+          },
+        ],
+        callToAction: {
+          target: '',
+          text: 'Farming NOW',
+          href: '/home/stakeMON',
+        },
+      },
+      {
+        title: 'FARMING',
+        subtitle: 'Optimal choice for companies',
+        price: 199,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Curabitur suscipit risus',
+          },
+          {
+            description: 'Aliquam habitasse malesuada',
+          },
+          {
+            description: 'Suspendisse sit amet blandit',
+          },
+          {
+            description: 'Suspendisse auctor blandit dui',
+          },
+        ],
+        callToAction: {
+          target: '',
+          text: 'Farming NOW',
+          href: '/home/stakeMON',
         },
       },
     ]}
@@ -154,41 +150,41 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="Top 7 DeFi Yield Farming Platforms"
+    tagline=" "
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Aave DAO',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Yearn Finance',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Uniswap DAO',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Curve DAO',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'SushiSwap DAO',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'Balancer DAO',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'Compound DAO',
         icon: 'tabler:number-7',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: 'https://i.postimg.cc/wvWkBvKg/300.png',
       alt: 'Steps image',
     }}
   />
@@ -241,4 +237,12 @@ const metadata = {
       },
     ]}
   />
+
+  <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "fe3b58c7-6561-4bfe-8e90-9ac7ad4e46ed"
+  });
+</script>
 </Layout>
