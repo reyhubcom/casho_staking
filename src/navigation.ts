@@ -80,26 +80,26 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: 'Networks',
       links: [
         {
-          text: 'Blog List',
+          text: 'Ethereum',
           href: getBlogPermalink(),
         },
         {
-          text: 'Article',
+          text: 'Solana',
           href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
-          text: 'Article (with MDX)',
+          text: 'Monad',
           href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Category Page',
+          text: 'Binance',
           href: getPermalink('tutorials', 'category'),
         },
         {
-          text: 'Tag Page',
+          text: 'All Networks',
           href: getPermalink('astro', 'tag'),
         },
       ],
